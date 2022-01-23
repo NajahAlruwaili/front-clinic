@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import {useHistory} from "react-router-dom"
+import {Link,useHistory} from "react-router-dom"
 import axios from "axios";
+
 import "./SignUp.css"
 
 
@@ -67,7 +68,7 @@ export default function SignUp() {
     </div>
 
     <h3 className="su"> هل تمتلك حساب ؟</h3>
-        <a className="suu" href='/login'> تسجيل دخول </a>
+        <Link className="suu" href='/login'> تسجيل دخول </Link>
 
   </div>
 </div>

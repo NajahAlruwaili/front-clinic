@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {useHistory} from "react-router-dom";
+import {Link,useHistory} from "react-router-dom";
 import axios from "axios";
 import "./SignUp.css"
 
@@ -63,7 +63,7 @@ export default function Login({setAdmin, setToken, setUserId }) {
         </div>
 
         <h3 className="su">لا امتلك حساب ؟</h3>
-        <a className="suu" href='/signUp'>  أنشاء حساب جديد</a>
+        <Link className="suu" href='/signUp'>  أنشاء حساب جديد</Link>
 
       </div>
       
