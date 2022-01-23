@@ -68,20 +68,20 @@ export default function Navbar({ token, setToken }) {
           <AiOutlineCloseCircle onClick={()=>{hideMnue()}} className='btn'/>
              <ul>
                <li>
-                 <a href='/CallUs'> اتصل بنا </a>
+                 <Link href='/CallUs'> اتصل بنا </Link>
                </li>
                 <li>
-               <a href='/AboutUs'>عننا </a>
+               <Link href='/AboutUs'>عننا </Link>
               </li>
 
                <li>
-                 <a href='/'>الرئيسية</a>
+                 <Link href='/'>الرئيسية</Link>
                </li>
              </ul>
              <div className='helloBox'>
         <h1>مـرحبــا بكــم فـي بــالانـــس</h1>
-        <a href='/login'>تسجيل دخول</a>
-        <a href='/signUp'> أنشاء حساب</a>
+        <Link href='/login'>تسجيل دخول</Link>
+        <Link href='/signUp'> أنشاء حساب</Link>
           </div>
            </div>
         ) }   
