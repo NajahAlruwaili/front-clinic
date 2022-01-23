@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/front-clinic/static/css/main.b79e7772.chunk.css",
-    "main.js": "/front-clinic/static/js/main.7c2edbb3.chunk.js",
-    "main.js.map": "/front-clinic/static/js/main.7c2edbb3.chunk.js.map",
+    "main.js": "/front-clinic/static/js/main.f276d4e9.chunk.js",
+    "main.js.map": "/front-clinic/static/js/main.f276d4e9.chunk.js.map",
     "runtime-main.js": "/front-clinic/static/js/runtime-main.6bace5e5.js",
     "runtime-main.js.map": "/front-clinic/static/js/runtime-main.6bace5e5.js.map",
     "static/js/2.96270278.chunk.js": "/front-clinic/static/js/2.96270278.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.6bace5e5.js",
     "static/js/2.96270278.chunk.js",
     "static/css/main.b79e7772.chunk.css",
-    "static/js/main.7c2edbb3.chunk.js"
+    "static/js/main.f276d4e9.chunk.js"
   ]
 }
