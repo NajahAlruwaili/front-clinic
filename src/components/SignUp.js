@@ -68,7 +68,7 @@ export default function SignUp() {
     </div>
 
     <h3 className="su"> هل تمتلك حساب ؟</h3>
-        <Link className="suu" href='/login'> تسجيل دخول </Link>
+        <Link className="suu" to='/login'> تسجيل دخول </Link>
 
   </div>
 </div>

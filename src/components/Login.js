@@ -63,7 +63,7 @@ export default function Login({setAdmin, setToken, setUserId }) {
         </div>
 
         <h3 className="su">لا امتلك حساب ؟</h3>
-        <Link className="suu" href='/signUp'>  أنشاء حساب جديد</Link>
+        <Link className="suu" to='/signUp'>  أنشاء حساب جديد</Link>
 
       </div>
       
