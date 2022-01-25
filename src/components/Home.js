@@ -1,18 +1,19 @@
 import React from 'react'
-import Navbar from './Navbar'
-import "../Style2.css"
+import { Link } from 'react-router-dom'
+// import Navbar from './Navbar'
+import "./Home.css"
 export default function Home() {
     return (
         <>
-            <Navbar />
-            <div className='hrader'>
+            
+            <div className='helloBox'>
+        <h1>مـرحبــا بكــم فـي بــالانـــس</h1>
+        <Link to='/login'>تسجيل دخول</Link>
+        <Link to='/signUp'> أنشاء حساب</Link>
+        {/* <p>helllllloooooooooooooooo</p> */}
+          </div>
 
-            </div>
-        {/* <div className='vh-100 w-100 bg-black maincontent'>
-            <img src="https://ammannet.net/sites/default/files/styles/news_landing/public/2019-05/146339882400.jpg?itok=dlfV-gPM" />
-            <h1>مرحبا بكم في بالانس </h1>
-            <p>hhhhhh</p>
-        </div> */}
+        
      </>
     )
 }    

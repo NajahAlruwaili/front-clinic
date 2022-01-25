@@ -3,6 +3,8 @@ import axios from "axios";
 // import { useParams } from 'react-router-dom';
 import { MdAddCircle } from "react-icons/md";
 import { BsFillHeartFill } from "react-icons/bs";
+import { GrBasket } from "react-icons/gr";
+
 import "./Video.css"
 
 
@@ -38,11 +40,12 @@ export default function Video({ token , admin}) {
 
     
       const addVideo=async ()=>{
-        console.log("okkkkk");
+        // console.log("okkkkk");
         try{
-          const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/Video`, {
-            description:description,
-            video:vid,
+          const result = await axios.post(
+            `${process.env.REACT_APP_BACKEND_URL}/Video`, 
+            {
+            description:description, video:vid,
           },
           {
             headers:{authorization:"Bearer " + token},
@@ -51,27 +54,26 @@ export default function Video({ token , admin}) {
           const copied = [...video];
           copied.push(result.data)
           setVideo(copied)
+          console.log(copied);
         }catch (err){
           console.log("err");
         }
           // console.log(result.data);
       }
 
-      
-    
-      // const deleteVideo=async (id, index)=>{
-      //   try{
-      //   const deletedVideo = await axios.delete(`http://localhost:5000/Video/${id}`,{
-      //     headers:{authorization:"Bearer " + token},
-      //   });
-      //   const copied= [...video];
-      //   copied.splice(index,1);
-      //   setVideo(copied);
+      const deleteVideo=async (id, index)=>{
+        try{
+        const deletedVideo = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/Video/${id}`,{
+          headers:{authorization:"Bearer " + token},
+        });
+        const copied= [...video];
+        copied.splice(index,1);
+        setVideo(copied);
 
-      // }catch (err){
-      //   console.log("err");
-      // }
-      // };
+      }catch (err){
+        console.log("err");
+      }
+      };
 
       const fav = async (id) => {
         try {
@@ -132,7 +134,7 @@ export default function Video({ token , admin}) {
               <p><iframe id="n"  src={`https://www.youtube.com/embed/${element.video}`} ></iframe></p>
               
     
-                    {/* <GrBasket className="button" onClick={()=>{deleteVideo(element._id, i)}}/> */}
+                    <GrBasket className="button" onClick={()=>{deleteVideo(element._id, i)}}/>
                     
                     <BsFillHeartFill className="HEART" onClick={() => {fav(element._id) }}/>
                     

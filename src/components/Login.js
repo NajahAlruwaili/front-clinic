@@ -33,6 +33,7 @@ export default function Login({setAdmin, setToken, setUserId }) {
       setToken(response.data.token);
       setAdmin(response.data.payload.admin);
       setUserId(response.data.payload.userId)
+      console.log(response.data.payload.admin, "admin?");
       console.log(response.data.payload.userId, "it is useeer");
 
       // console.log(admin,"it adddddddmin");

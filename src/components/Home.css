@@ -1,0 +1,57 @@
+.biggg{
+    background-color: sandybrown;
+}
+.helloBox{
+    width: 40%;
+    height: 45%;
+    color: rgb(10, 10, 10);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+    font-size: xx-large;
+    /* border: 2px solid red; */
+    /* background: #242323; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 0 0 20px 0px rgb(250, 245, 245); */
+    margin-top: 4%;
+    border-radius: 10px;
+    padding-top: 22px;
+    /* border: 2px solid black; */
+
+}
+.helloBox  h1{
+    /* font-size: 62px; */
+    padding: 12% 0 5% 0;
+    
+}
+.helloBox a {
+    display: inline-block;
+    /* border: 2px solid red; */
+    
+    text-decoration: none;
+    margin: 5% 5% ;
+    color: #000;
+    
+    border: 1px solid rgb(20, 19, 19);
+    padding: 20px 43px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.helloBox a::after {
+    content:'';
+    width: 0%;
+    height: 2px;
+    /* background: #e2d0ce; */
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.helloBox a:hover::after {
+    width: 100%;
+    background: #000;
+}

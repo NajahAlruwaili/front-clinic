@@ -31,7 +31,7 @@ export default function App() {
     <div className="s">
       {/* <section className="nn" ></section> */}
       <Navbar token={token} setToken={setToken} admin={admin}/>
-      <Route exact path="/" element={<Home/>} /> 
+      <Route exact path="/" render={()=>{return <Home/>}} /> 
       {/* <Route exact path="/aboutUs" component={<AboutUs/>} />  */}
       <Route exact path="/AboutUs" render={()=>{return <AboutUs token={token}/>}}/>
       <Route exact path="/CallUs" render={()=>{return <CallUs token={token}/>}}/>
