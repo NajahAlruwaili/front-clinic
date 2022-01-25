@@ -1,21 +1,9 @@
 import React from 'react'
-import { Link,useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../Style2.css"
-import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { GiHamburgerMenu } from 'react-icons/gi';
 
 
 export default function Navbar({ token, setToken }) {
-  const history = useHistory();
-
-  let navLink = document.getElementById("navLink")
-  function showMnue () {
-    navLink.style.right = "0"
-  }
-  
-  function hideMnue () {
-    navLink.style.right = "-200px"
-  }
 
 
     return (
@@ -29,7 +17,6 @@ export default function Navbar({ token, setToken }) {
 
         {token ? (
           <div>
-          <AiOutlineCloseCircle onClick={()=>{hideMnue()}} className='btn'/>
 
         <ul> 
           <li>
@@ -65,7 +52,6 @@ export default function Navbar({ token, setToken }) {
         </div>
         ):(
           <div>
-          <AiOutlineCloseCircle onClick={()=>{hideMnue()}} className='btn'/>
              <ul>
                <li>
                  <Link to='/CallUs'> اتصل بنا </Link>
@@ -78,17 +64,12 @@ export default function Navbar({ token, setToken }) {
                  <Link to='/'>الرئيسية</Link>
                </li>
              </ul>
-             <div className='helloBox'>
-        <h1>مـرحبــا بكــم فـي بــالانـــس</h1>
-        <Link to='/login'>تسجيل دخول</Link>
-        <Link to='/signUp'> أنشاء حساب</Link>
-          </div>
+            
            </div>
         ) }   
 
         </div>
             
-        <GiHamburgerMenu onClick={()=>{showMnue()}} className='btnM'/>
 
           
      
