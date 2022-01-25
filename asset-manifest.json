@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/front-clinic/static/css/main.ab41f50e.chunk.css",
-    "main.js": "/front-clinic/static/js/main.2d65bcd4.chunk.js",
-    "main.js.map": "/front-clinic/static/js/main.2d65bcd4.chunk.js.map",
+    "main.css": "/front-clinic/static/css/main.9165d471.chunk.css",
+    "main.js": "/front-clinic/static/js/main.bf670e64.chunk.js",
+    "main.js.map": "/front-clinic/static/js/main.bf670e64.chunk.js.map",
     "runtime-main.js": "/front-clinic/static/js/runtime-main.6bace5e5.js",
     "runtime-main.js.map": "/front-clinic/static/js/runtime-main.6bace5e5.js.map",
-    "static/js/2.30874490.chunk.js": "/front-clinic/static/js/2.30874490.chunk.js",
-    "static/js/2.30874490.chunk.js.map": "/front-clinic/static/js/2.30874490.chunk.js.map",
+    "static/js/2.edd5d818.chunk.js": "/front-clinic/static/js/2.edd5d818.chunk.js",
+    "static/js/2.edd5d818.chunk.js.map": "/front-clinic/static/js/2.edd5d818.chunk.js.map",
     "index.html": "/front-clinic/index.html",
-    "static/css/main.ab41f50e.chunk.css.map": "/front-clinic/static/css/main.ab41f50e.chunk.css.map",
-    "static/js/2.30874490.chunk.js.LICENSE.txt": "/front-clinic/static/js/2.30874490.chunk.js.LICENSE.txt"
+    "static/css/main.9165d471.chunk.css.map": "/front-clinic/static/css/main.9165d471.chunk.css.map",
+    "static/js/2.edd5d818.chunk.js.LICENSE.txt": "/front-clinic/static/js/2.edd5d818.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6bace5e5.js",
-    "static/js/2.30874490.chunk.js",
-    "static/css/main.ab41f50e.chunk.css",
-    "static/js/main.2d65bcd4.chunk.js"
+    "static/js/2.edd5d818.chunk.js",
+    "static/css/main.9165d471.chunk.css",
+    "static/js/main.bf670e64.chunk.js"
   ]
 }
